@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This is namaste React by Vishal Mali",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -24,7 +26,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
-  "browserslist":[
+  "browserslist": [
     "last 2 version"
   ]
 }
