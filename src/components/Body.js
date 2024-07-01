@@ -31,22 +31,23 @@ const Body = () => {
 
     return listOfRestaurant.length === 0 ? <Shimmer /> : (
         <div className='body'>
-            <div className="filter">
-                <div className="search">
-                    <input type="text" className="search-box" value={searchText} onChange={(e) => {
+            <div className="filter flex">
+                <div className="search m-4 p-4">
+                    <input type="text" className="border border-solid border-black" value={searchText} onChange={(e) => {
                         setsearchText(e.target.value);
                     }} />
-                    <button onClick={() => {
+                    <button className="px-4 py-2 m-4 rounded-md bg-gray-100 hover:bg-gray-200" onClick={() => {
                         const filteredList = listOfRestaurant.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
                         setfilteredRestaurant(filteredList);
                     }}>Search</button>
                 </div>
-                <button className="filter-btn" onClick={() => {
-                    const filteredList = listOfRestaurant.filter((res) => res.info.avgRating > 4.5);
-                    setfilteredRestaurant(filteredList);
-                }}>Top Rated Restaurants</button>
+                <div className="search m-4 p-4 flex items-center">
+                    <button className="px-4 py-2 rounded-md bg-gray-100 hover:bg-gray-200" onClick={() => {
+                        const filteredList = listOfRestaurant.filter((res) => res.info.avgRating > 4.5);
+                        setfilteredRestaurant(filteredList);
+                    }}>Top Rated Restaurants</button></div>
             </div>
-            <div className='res-container'>
+            <div className='flex flex-wrap'>
                 {
                     filteredRestaurant.map((restaurant) => <Link key={restaurant.info.id} to={"restaurants/" + restaurant.info.id}><RestaurantCard restData={restaurant} /> </Link>)
                 }
