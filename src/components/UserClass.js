@@ -13,15 +13,12 @@ class UserClass extends React.Component {
                 avatar_url: "Dumy photo"
             }
         }
-        // console.log(this.props.name + " Chield Constructor");
+
     }
 
     async componentDidMount() {
-        // console.log(this.props.name + " Chield Component Did Mount");
         const data = await fetch("https://api.github.com/users/vishalmali06");
         const json = await data.json();
-        console.log(json);
-
         this.setState({
             userInfo: json
         })
