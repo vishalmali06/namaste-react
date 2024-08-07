@@ -1,0 +1,81 @@
+{
+    "info": {
+        "id": "69876",
+        "name": "Subway",
+        "cloudinaryImageId": "63178e3e64d503a479f2a2048a474552",
+        "locality": "UB City",
+        "areaName": "Central Bangalore",
+        "costForTwo": "₹350 for two",
+        "cuisines": [
+            "Salads",
+            "Snacks",
+            "Desserts",
+            "Beverages"
+        ],
+        "avgRating": 4.4,
+        "parentId": "2",
+        "avgRatingString": "4.4",
+        "totalRatingsString": "1K+",
+        "sla": {
+            "deliveryTime": 33,
+            "lastMileTravel": 0.5,
+            "serviceability": "SERVICEABLE",
+            "slaString": "30-35 mins",
+            "lastMileTravelString": "0.5 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-07-31 23:00:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "Rxawards/_CATEGORY-Sandwiches.png",
+                    "description": "Delivery!"
+                }
+            ]
+        },
+        "isOpen": true,
+        "aggregatedDiscountInfoV2": {},
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Delivery!",
+                                "imageId": "Rxawards/_CATEGORY-Sandwiches.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {},
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/subway-ub-city-central-bangalore-bangalore-69876",
+        "type": "WEBLINK"
+    }
+}

@@ -1,37 +1,38 @@
-# Namste React
+# Namaste React 🚀
 
 # Parcel
 
 - Dev Build
 - Local Server
-- HMR Hot Module Replacement
+- HMR = Hot Module Replacement
 - File Watching Algorithm - written in C++
 - Caching - Faster Builds
 - Image Optimization
 - Minification
-- Bindling
+- Bundling
 - Compress
-- Consistent Hasing
-- Code Spliting
+- Consistent Hashing
+- Code Splitting
 - Differential Bundling - support older browsers
-- Dianostic
-- Error Handing
-- HTTPS
+- Diagnostic
+- Error Handling
+- HTTPs
 - Tree Shaking - remove unused code
-- Diffrent dev and prod bundles
+- Different dev and prod bundles
 
-# Namste Food
+# Namaste Food
 
 /\*\*
 
 - Header
 - - Logo
-- - Nav Item
+- - Nav Items
 - Body
 - - Search
 - - RestaurantContainer
-- - Ing
-- - Name of Res, Star Rating, delevery time
+- - RestaurantCard
+-      - Img
+-      - Name of Res, Star Rating, cuisine, delery tie
 - Footer
 - - Copyright
 - - Links
@@ -39,18 +40,54 @@
 - - Contact
     \*/
 
-Two types of Export/inport
+Two types of Export/Import
 
-- Default Export/import
-  export default Component;
-  import Component from "path";
+- Default Export/Import
 
--Name Export/Import
-export const Component
-import {Component} from "path"
+export default Component;
+import Component from "path";
+
+- Named Export/Import
+
+export const Component;
+import {Component} from "path";
 
 # React Hooks
 
 (Normal JS utility functions)
-useState()
-useEffect()
+
+- useState() - Superpowerful State Variables in react
+- useEffect()
+
+# 2 types Routing in web apps
+
+- Client Side Routing
+- Server Side Routing
+
+# Redux Toolkit
+
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+- Slice (cartSlice)
+- dispatch(action)
+- Selector
+
+# Types of testing (devloper)
+
+- Unit Testing
+- Integration Testing
+- End to End Testing - e2e testing
+
+# Setting up Testing in our app
+
+- Install React Testing Library
+- Installed jest
+- Installed Babel dependencies
+- Configure Babel
+- Configure Parcel Config file to disable default babel transpilation
+- Jest - npx jest --init
+- Install jsdom library
+- Install @babel/preset-react - to make JSX work in test cases
+- Include @babel/preset-react inside my babel config
+- npm i -D @testing-library/jest-dom
